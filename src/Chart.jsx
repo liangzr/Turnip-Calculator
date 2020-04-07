@@ -22,7 +22,7 @@ const generateData = (filter) => {
 
   return [
     {
-      label: "Buy Price",
+      label: "买入价格",
       data: new Array(12).fill(filter[0] || null),
       fill: true,
       backgroundColor: "transparent",
@@ -32,14 +32,14 @@ const generateData = (filter) => {
       borderDash: [3, 9],
     },
     {
-      label: "Yours",
+      label: "实际价格",
       data: Array.from({ length: 12 }, (v, i) => filter[i + 1] || null),
       fill: false,
       backgroundColor: "#EF8341",
       borderColor: "#EF8341",
     },
     {
-      label: "Average",
+      label: "平均值",
       data: avgData[0] ? avgData[0].map(Math.trunc) : new Array(12).fill(null),
       backgroundColor: "#F0E16F",
       borderColor: "#F0E16F",
@@ -47,7 +47,7 @@ const generateData = (filter) => {
       fill: false,
     },
     {
-      label: "Maximum",
+      label: "最大值",
       data: minMaxData[1] || new Array(12).fill(null),
       backgroundColor: "#A5D5A5",
       borderColor: "#A5D5A5",
@@ -56,7 +56,7 @@ const generateData = (filter) => {
       fill: 2,
     },
     {
-      label: "Minimum",
+      label: "最小值",
       data: minMaxData[0] || new Array(12).fill(null),
       backgroundColor: "#88C9A1",
       borderColor: "#88C9A1",
@@ -77,9 +77,9 @@ const ChartComponent = ({ filter }) => {
       type: "line",
       data: {
         datasets: generateData(filter),
-        labels: "Mon Tue Wed Thu Fri Sat"
+        labels: "周一 周二 周三 周四 周五 周六"
           .split(" ")
-          .reduce((acc, day) => [...acc, `${day} AM`, `${day} PM`], []),
+          .reduce((acc, day) => [...acc, `${day}/上午`, `${day}/下午`], []),
       },
       options: {
         maintainAspectRatio: false,

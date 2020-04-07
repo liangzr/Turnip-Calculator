@@ -12,21 +12,19 @@ const Footer = () => {
       borderRadius={16}
     >
       <Box my={2}>
-        <Typography variant="h5">How to use it</Typography>
+        <Typography variant="h5">使用说明</Typography>
         <Typography variant="body1">
-          - The <b>Buy Price</b> value is on your own island. It doesn&apos;t
-          matter if you buy it in other island!
-          <br />- Prices Changes <b>twice a day</b>. Be sure to log it. (We save
-          your data in your device).
+          - <b>买入价格</b> 对应你岛上的售卖价格，与你在其它岛上的买入价无关！
+          <br />- 价格一天刷新 <b>两次</b>，请及时记录（我们会帮您存储到当前设备）。
         </Typography>
       </Box>
       <Box my={2}>
-        <Typography variant="h5">Changelog</Typography>
+        <Typography variant="h5">更新日志</Typography>
         <Typography variant="body1">
-          1.1: Clear data button! Please use it responsibly! <br />
-          1.2a: Fixed ranges of patterns
+          1.1: 增加清空数据按键，谨慎使用！<br />
+          1.2a: 修复精度
           <br />
-          1.3: Animations fixed. New icon, thanks{" "}
+          1.3: 修复动画， 感谢{" "}
           <Link
             href="https://github.com/elxris/Turnip-Calculator/pull/2"
             target="_blank"
@@ -34,7 +32,7 @@ const Footer = () => {
           >
             @mtaylor76
           </Link>
-          ! New horizontal marker for buy price, thanks{" "}
+          提供的新图标！感谢{" "}
           <Link
             href="https://github.com/elxris/Turnip-Calculator/issues/5"
             target="_blank"
@@ -42,13 +40,13 @@ const Footer = () => {
           >
             @pudquick
           </Link>
-          !
+          提供的全新买入价标记 
         </Typography>
       </Box>
       <Box my={2}>
-        <Typography variant="h5">About</Typography>
+        <Typography variant="h5">关于</Typography>
         <Typography variant="body1">
-          This wouldn&apos;t be possible without{" "}
+          没有{" "}
           <Link
             href="https://twitter.com/_Ninji/status/1244818665851289602"
             target="_blank"
@@ -56,7 +54,8 @@ const Footer = () => {
           >
             @_Ninji&apos;s
           </Link>{" "}
-          effort. <br />I got this inspiration from{" "}
+          的努力就没有这个工具。
+          <br />我从{" "}
           <Link
             href="https://mikebryant.github.io/ac-nh-turnip-prices/index.html"
             target="_blank"
@@ -64,9 +63,8 @@ const Footer = () => {
           >
             mikebryant&apos;s
           </Link>{" "}
-          work. <br />
-          Finally, but not last, my brother&apos;s help with design. He is game
-          dev! Follow him on twitter:{" "}
+          的作品中得到了启发。 <br />
+          最后要提一下我的兄弟在设计方面的帮助. 他是一个游戏开发者，你可以在 twitter 上关注他：{" "}
           <Link
             href="https://twitter.com/Consalv0"
             target="_blank"
@@ -74,15 +72,29 @@ const Footer = () => {
           >
             @Consalv0
           </Link>
-          . <br />A bug? Report it{" "}
+          。 <br />遇到了问题? 点{" "}
           <Link
             href="https://github.com/elxris/Turnip-Calculator/issues"
             target="_blank"
             rel="noopener"
           >
-            here
+            这里 
           </Link>
-          .
+          上报。
+        </Typography>
+      </Box>
+      <Box my={2}>
+        <Typography variant="h5">译者注</Typography>
+        <Typography variant="body1">
+          此工具算法来自最新作《集合啦！动物森友会》，趋势仅供参考。建议及反馈点{" "}
+          <Link
+            href="https://docs.qq.com/form/fill/DUVhLSFVkbkNNb1V2?_w_tencentdocx_form=1"
+            target="_blank"
+            rel="noopener"
+          >
+            这里 
+          </Link>
+          。
         </Typography>
       </Box>
     </Box>

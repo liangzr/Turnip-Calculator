@@ -31,16 +31,16 @@ const ClearButton = (props) => {
       variant="contained"
       {...props}
     >
-      Clear All Data!
+      清空数据!
     </Button>
   );
 };
 
 const names = [
-  "Buy Price",
-  ..."Mon Tue Wed Thu Fri Sat"
+  "买入价格",
+  ..."周一 周二 周三 周四 周五 周六"
     .split(" ")
-    .reduce((curr, day) => [...curr, ...[`${day} AM`, `${day} PM`]], []),
+    .reduce((curr, day) => [...curr, ...[`${day}/上午`, `${day}/下午`]], []),
 ];
 
 const Filter = ({ filters, onChange }) => {
